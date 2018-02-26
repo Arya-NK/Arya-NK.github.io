@@ -10,13 +10,12 @@ comments: false
 ---
 
 <figure>
-	<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D" align="left" style="width: 250px; height: 350px" >
+	<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D" align="middle" style="width: 300px; height: 450px" >
 	
 </figure>
 
 Based in Gloucestershire, UK . Currently working as a data scientist and also pursuing Masters in Software systems from University of Bath. 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
