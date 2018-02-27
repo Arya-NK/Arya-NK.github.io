@@ -17,8 +17,7 @@ comments: false
 
   Based in Gloucestershire, UK . Currently working as a data scientist and also pursuing Masters in Software systems from    University of Bath. 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 # About the blog
