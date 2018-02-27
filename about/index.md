@@ -10,7 +10,7 @@ comments: false
 ---
 
 <figure>
-	<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D#left" style="width: 300px;height: 450px;" >
+	<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D#left" style="width: 30%;height: 45%;float:right:" >
 	
 </figure>
 
