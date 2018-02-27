@@ -5,7 +5,7 @@ tags: [about]
 date: 2018-01-23
 comments: false
 ---
-    
+
 # Hi I'm Arya NK
 ---
 
@@ -13,12 +13,12 @@ comments: false
 
 
 
-<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D" style="width:40%;height:58%;float:left;hspace:20"/>
+<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D" style="width:40%;height:58%;float:left;margin: 0px 20px;"/>
 
-<p style="padding: 0 7em 2em 0;">Based in Gloucestershire, UK . Currently working as a data scientist and also pursuing Masters in Software systems from University of Bath. </p>
+Based in Gloucestershire, UK . Currently working as a data scientist and also pursuing Masters in Software systems from University of Bath.
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 # About the blog
