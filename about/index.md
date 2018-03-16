@@ -13,7 +13,7 @@ comments: false
 
 
 
-<img src="https://raw.githubusercontent.com/Arya-NK/Arya_NK/gh-pages/assets/img/my_picture.jpg?token=ARK0QClMxNTIXV-F73soq2apEJ6ZQyX3ks5anX44wA%3D%3D" style="width:40%;height:58%;float:left;margin: 0px 20px;"/>
+<img src="/assets/img/my_picture.jpg" style="width:40%;height:58%;float:left;margin: 0px 20px;"/>
 
 Based in Gloucestershire, UK . Currently working as a data scientist and also pursuing Masters in Software systems from University of Bath.
 
