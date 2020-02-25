@@ -63,7 +63,7 @@ instagram:          arya_nalinkumar
 #hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
