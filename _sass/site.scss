@@ -204,7 +204,8 @@ header .entry-meta {
         margin-right: -4rem;
         margin-top: -2rem;
         border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
+		background-color: rgba($black, 0.35);
+		background-size: cover;
         background-blend-mode: multiply;
         background-position: center center;
     }
@@ -215,7 +216,8 @@ header .entry-meta {
         margin-right: -4rem;
         margin-top: -2rem;
         border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
+		background-color: rgba($black, 0.35);
+		background-size: cover;
         background-blend-mode: multiply;
         background-position: center center;
     }
