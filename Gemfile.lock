@@ -254,6 +254,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-mentions
   jekyll-sitemap
+  jemoji
   thin
 
 BUNDLED WITH
