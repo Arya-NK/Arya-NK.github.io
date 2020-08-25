@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AWS CloudFormation - Infrastructure as Code"
+date:   2020-08-25
 excerpt: ""
 tags: [AWS, Cloud Computing, CloudFormation, Infrastructure as Code]
 feature: /assets/img/featureImages/second.jpeg
@@ -82,7 +83,7 @@ Now we have covered the theory part of CloudFormation. Let's move onto a hands-o
 
 To do this, you must have an AWS account. A free tier AWS account will also work. *[Click here to know more about the AWS free tier account](https://aws.amazon.com/premiumsupport/knowledge-center/what-is-free-tier/)*. In this post, we will use YAML for writing template. You can use JSON or any other supported language via AWS SDK too.
 
-Following is a CloudFormation template to create a S3 bucket named "aws-example-bucket-98765".
+Following is a CloudFormation template to create a S3 bucket named `aws-example-bucket-98765`.
 
 {% highlight yaml %}Resources:
   S3Bucket:
@@ -94,65 +95,95 @@ Following is a CloudFormation template to create a S3 bucket named "aws-example-
 First, copy the above code block and create a file with extension “.yaml" (e.g., *cf_s3_template.yaml*). Please note the bucket name is universal. So, you might need to randomise the bucket name to avoid any errors. Next, log onto the AWS account and go to CloudFormation. Now, follow the instructions and screenshots in the below slides to create your very first CloudFormation stack.
 
 <!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="slideshow-container gallery">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-2.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-2.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">2 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-3.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-3.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">3 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-4.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-4.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">4 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-5.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-5.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">5 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-6.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-6.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">6 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-7.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-7.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">7 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-8.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-8.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">8 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-9.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-9.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">9 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-10.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-10.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">10 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-11.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-11.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">11 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-12.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-12.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">12 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-13.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-13.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">13 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-14.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-14.jpg" style="width:100%">
+    </a>
   </div>
   <div class="mySlides fade">
     <div class="numbertext">14 / 14</div>
+    <a href="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-15.jpg">
     <img src="{{site.url}}/assets/img/slides/cloudFormation/cloudFormation_slides-15.jpg" style="width:100%">
+    </a>
   </div>
+  
+  
   
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -178,7 +209,7 @@ First, copy the above code block and create a file with extension “.yaml" (e.g
   <span class="dot" onclick="currentSlide(14)"></span>
 </div>
 
-In the above example, we created a S3 bucket using CloudFormation. If we need to apply a few more changes to the created S3 bucket, we can do so by updating the stack. To understand how to apply those changes, the *[AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)* can help. Assume that we need to make the created S3 bucket into publicly accessible. To do so, add the below line under Properties in *cf_s3_template.yaml* file. 
+In the above example, we created a S3 bucket using CloudFormation. If we need to apply a few more changes to the created S3 bucket, we can do so by updating the stack. To understand how to apply those changes, the *[AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)* can help. Assume that we need to make the created S3 bucket into publicly accessible. To do so, add the below line under `Properties` in *cf_s3_template.yaml* file. 
 
 {% highlight yaml %}AccessControl: PublicRead {% endhighlight %}
 
@@ -229,17 +260,17 @@ Outputs:
 
 {% endhighlight %}
 
-As you can see, there are various sections in CloudFormation templates which we can make use of. All these CloudFormation template sections are optional apart from "resources". In the example template we did earlier, we used the resources section to specify which resource we would like to provision, i.e., S3 bucket. Let's dive more into these sections individually.
+As you can see, there are various sections in CloudFormation templates which we can make use of. All these CloudFormation template sections are optional apart from `Resources`. In the example template we did earlier, we used the resources section to specify which resource we would like to provision, i.e., S3 bucket. Let's dive more into these sections individually.
 
 ### AWSTemplateFormatVersion
 
-The AWSTemplateFormatVersion section identifies the capabilities of a template. As of this writing, the latest template format version is `“2010-09-09”`. Following is an example of a YAML snippet for AWSTemplateFormatVersion.
+The `AWSTemplateFormatVersion` section identifies the capabilities of a template. As of this writing, the latest template format version is `2010-09-09`. Following is an example of a YAML snippet for AWSTemplateFormatVersion.
 
 {% highlight yaml %}AWSTemplateFormatVersion: "2010-09-09" {% endhighlight %}
 
 ### Description
 
-The description section is using to include comments about your template, as shown below.
+The `Description` section is using to include comments about your template, as shown below.
 
 {% highlight yaml %}Description: >
   This is a
@@ -259,7 +290,7 @@ Besides, there exist some special type of metadata which certain CloudFormation 
 
 ### Parameters
 
-Parameters are a way to customise and provide inputs to the CloudFormation template. This makes the CloudFormation template to reuse. If you have a CloudFormation template which is likely to change in the future, then use parameters. For instance, look at the below parameter that specifies the EC2 instance type.
+`Parameters` section is used to customise and provide inputs to the CloudFormation template. This makes the CloudFormation template to reuse. If you have a CloudFormation template which is likely to change in the future, then use parameters. For instance, look at the below parameter that specifies the EC2 instance type.
 
 {% highlight yaml %}Parameters: 
   InstanceTypeParameter: 
@@ -272,7 +303,7 @@ Parameters are a way to customise and provide inputs to the CloudFormation templ
     Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
 {% endhighlight %}
 
-In the above example, we are using a parameter named “InstanceTypeParameter” to specify the ec2 instance type. If we know the acceptable values for that parameter, we can define those in allowed value. Further, it's possible to control the parameter values via type, default, constraints, min/max length, and so on. Now we have specified a parameter, we need to reference the parameter via `Ref` intrinsic function as below.
+In the above example, we are using a parameter named `InstanceTypeParameter` to specify the ec2 instance type. If we know the acceptable values for that parameter, we can define those in allowed value. Further, it's possible to control the parameter values via type, default, constraints, min/max length, and so on. Now we have specified a parameter, we need to reference the parameter via `Ref` intrinsic function as below.
 
 {% highlight yaml %}Ec2Instance:
   Type: AWS::EC2::Instance
@@ -293,7 +324,7 @@ Further, we can pass dynamic parameter values from other AWS services like AWS S
 
 ### Mappings
 
-The mapping section matches a key to a corresponding set of named values. A common use case for mapping is using AWS region as the key to a set of values. These values can be used via `FindInMap` function which retrieves the value from a map. Here is an example of usage of mapping to map AWS region to AMI.
+The `Mappings` section matches a key to a corresponding set of named values. A common use case for mapping is using AWS region as the key to a set of values. These values can be used via `FindInMap` function which retrieves the value from a map. Here is an example of usage of mapping to map AWS region to AMI.
 
 {% highlight yaml %}Mappings: 
   RegionMap: 
@@ -311,7 +342,7 @@ Resources:
       InstanceType: m1.small
 {% endhighlight %}
 
-You can also use mappings in conjunction with parameters to map a parameter value to a set of named values. Following is an example of the mapping parameter “EnvironmentType” to different AMI based on the AWS region.
+You can also use mappings in conjunction with parameters to map a parameter value to a set of named values. Following is an example of the mapping parameter `EnvironmentType` to different AMI based on the AWS region.
 
 {% highlight yaml %}Parameters: 
     EnvironmentType: 
@@ -322,7 +353,7 @@ You can also use mappings in conjunction with parameters to map a parameter valu
         - prod
         - test
       ConstraintDescription: must be either prod or test
-  Mappings: 
+Mappings: 
     RegionAndInstanceTypeToAMIID: 
       us-east-1: 
         test: "ami-8ff710e2"
@@ -331,7 +362,7 @@ You can also use mappings in conjunction with parameters to map a parameter valu
         test: "ami-eff1028f"
         prod: "ami-d0f506b0"
         
-      ...other regions and AMI IDs...
+    ...other regions and AMI IDs...
 
 Resources:
    EC2Instance: 
@@ -344,11 +375,11 @@ Resources:
 
 ### Conditions
 
-A condition control whether certain resources are created or whether certain resource properties are assigned a value during stack creation or update. For instance, we can include a condition with resources or outputs so that the resources/output will get created only if the condition is true. Similarly, you can associate the condition with a property so that AWS CloudFormation only sets the property to a specific value if the condition is true. If the condition is false, AWS CloudFormation sets the property to a different value that you specify. To define conditions, we can use various types of intrinsic functions such as `Fn::And`, `Fn::Equals`, `Fn::If`, `Fn::Not`,`Fn::Or`, etc.
+The `Conditions` section controls whether certain resources are created or whether certain resource properties are assigned a value during stack creation or update. For instance, we can include a condition with resources or outputs so that the resources/output will get created only if the condition is true. Similarly, you can associate the condition with a property so that AWS CloudFormation only sets the property to a specific value if the condition is true. If the condition is false, AWS CloudFormation sets the property to a different value that you specify. To define conditions, we can use various types of intrinsic functions such as `Fn::And`, `Fn::Equals`, `Fn::If`, `Fn::Not`,`Fn::Or`, etc.
 
-So far, we understood certain sections of a CloudFormation template. Now, let’s look at an example to understand how these sections work together. In the following example, we use AWSTemplateFormatVersion, Mappings, Parameters, Conditions, and Resources sections. We define a parameter named “EnvType” that represents the environment which only allows the values: prod and test. We also describe a mapping named “RegionMap” to map the AWS region to AMI. Following that, we state our condition called “CreateProdResources”. This condition uses the intrinsic function equals to check if the selected EnvType parameter value is prod or not.
+So far, we understood certain sections of a CloudFormation template. Now, let’s look at an example to understand how these sections work together. In the following example, we use `AWSTemplateFormatVersion`, `Mappings`, `Parameters`, `Conditions`, and `Resources` sections. We define a parameter named `EnvType` that represents the environment which only allows the values: <code class="code-values">prod</code> and <code class="code-values">test</code>. We also describe a mapping named `RegionMap` to map the AWS region to AMI. Following that, we state our condition called `CreateProdResources`. This condition uses the intrinsic function equals to check if the selected `EnvType` parameter value is <code class="code-values">prod</code> or not.
 
-In the resources section, we define an EC2 instance, a volume, and a volume attachment. We can see the condition “CreateProdResources” are applied to both Volume and Volume attachment so that those resources will only get created in the prod environment.
+In the resources section, we define an EC2 instance, a volume, and a volume attachment. We can see the condition `CreateProdResources` are applied to both Volume and Volume attachment so that those resources will only get created in the prod environment.
 
 {% highlight yaml %}AWSTemplateFormatVersion: "2010-09-09"
 Mappings: 
@@ -391,16 +422,16 @@ Resources:
         !GetAtt EC2Instance.AvailabilityZone
 {% endhighlight %}
 
-**Note:** The `!GetAtt` is an intrinsic function that returns the value of an attribute from a resource in the template.
+**Note:** The `GetAtt` is an intrinsic function that returns the value of an attribute from a resource in the template.
 {: .notice}
 
 ### Transform
 
-We need to understand what macro is before moving onto the Transform section. AWS Documentation states macros as follows:
+We need to understand what macro is before moving onto the `Transform` section. AWS Documentation states macros as follows:
 
 > "Macros enable you to perform custom processing on templates, from simple actions like find-and-replace operations to extensive transformations of entire templates."
 
-To use macros to process a template, we need to create a macro definition and then reference either in the Transform section or use the Transform function which locates near to the template content that needs transformation.
+To use macros to process a template, we need to create a macro definition and then reference either in the `Transform` section or use the `Transform` function which locates near to the template content that needs transformation.
 
 AWS CloudFormation supports `AWS::Include`  & `AWS::Serverless` transforms, which are macros hosted by AWS CloudFormation.
 *	`AWS::Include` transform enables you to insert boilerplate template snippets into your templates.
@@ -416,19 +447,20 @@ Following is an example usage of `AWS::Include` transform. In this example, we a
 
 ### Resources
 
-The required Resources section defines the AWS resources that need provision in a stack, such as a S3 bucket or an EC2 instance. The syntax for creating any resource is as follows:
+The required `Resources` section defines the AWS resources that need provision in a stack, such as a S3 bucket or an EC2 instance. The syntax for creating any resource is as follows:
 
-{% highlight yaml %}'Fn::Transform':
-  Name: 'AWS::Include'
-  Parameters:
-    Location: s3://MyAmazonS3BucketName/MyFileName.yaml
+{% highlight yaml %}Resources:
+  Logical ID:
+    Type: Resource type
+    Properties:
+      Set of properties
 {% endhighlight %}
 
-The Logical ID needs to be unique within the template and used to reference the resource. It is the Logical ID of security group we use to associate with EC2 instance in our unicorn :unicorn: application. The resource type identifies the type of resource that you are declaring. For example, `AWS::EC2::Instance` declares an EC2 instance. For a list of all supported resource types, see AWS resource and property types reference. Further, we can configure resources by adding properties such as specifying AMI for an EC2 instance.
+The Logical ID needs to be unique within the template and used to reference the resource. It is the Logical ID of security group we use to associate with EC2 instance in our unicorn :unicorn: application. The resource type identifies the type of resource that you are declaring. For example, `AWS::EC2::Instance` declares an EC2 instance. For a list of all supported resource types, see [AWS resource and property types](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) reference. Further, we can configure resources by adding properties such as specifying AMI for an EC2 instance.
 
 ### Outputs
 
-Outputs are values that you can view in the outputs tab of the AWS CloudFormation management console. Outputs can be imported into other stacks to create cross-stack references. We can use outputs in conjunction with conditions as well. In the following example, we are outputting two values where the LoadBalancerDNSName will only be outputted if the condition satisfies.
+The `Outputs` section is for values that you can view in the outputs tab of the AWS CloudFormation management console. Outputs can be imported into other stacks to create cross-stack references. We can use outputs in conjunction with conditions as well. In the following example, we are outputting two values where the `LoadBalancerDNSName` will only be outputted if the condition satisfies.
 
 {% highlight yaml %}Outputs:
   LoadBalancerDNSName:
@@ -442,23 +474,23 @@ Outputs are values that you can view in the outputs tab of the AWS CloudFormatio
 
 # What’s More
 
-We have covered so much about AWS CloudFormation in this post. There are other features within and outside AWS CloudFormation which we can utilise. As the service CloudFormation is still evolving, it is always good to check with the official AWS CloudFormation Documentation & User Guide. Here I'm listing a few of the advanced concepts and helpful links if you are interested.
+We have covered so much about AWS CloudFormation in this post. There are other features within and outside AWS CloudFormation which we can utilise. As the service CloudFormation is still evolving, it is always good to check with the official **[AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)**. Here I'm listing a few of the advanced concepts and helpful links if you are interested.
 
-**CloudFormation drift** – a feature that determines whether the stack has drifted from its expected template configuration or not and returns detailed information about the drift status of each resource in the stack.
+**[CloudFormation drift](https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/)** – a feature that determines whether the stack has drifted from its expected template configuration or not and returns detailed information about the drift status of each resource in the stack.
 
-**CloudFormation Nested Stacks** – a feature for creating common components to use in other stacks. Using nested stacks to declare common components is considered as a best practice.
+**[CloudFormation Nested Stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)** – a feature for creating common components to use in other stacks. Using nested stacks to declare common components is considered as a best practice.
 
-**CloudFormation helper scripts** – an efficient way to install software packages and to start services on an Amazon EC2 instance which gets created as part of a stack.
+**[CloudFormation helper scripts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)** – an efficient way to install software packages and to start services on an Amazon EC2 instance which gets created as part of a stack.
 
-**AWS CloudFormation CLI support** – CloudFormation service supports managing stacks via Command Line Interface (CLI).
+**[AWS CloudFormation CLI support](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html)** – CloudFormation service supports managing stacks via Command Line Interface (CLI).
 
-**AWS CloudFormation Designer** - a graphic tool for creating, viewing, and modifying AWS CloudFormation templates.
+**[AWS CloudFormation Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html)** - a graphic tool for creating, viewing, and modifying AWS CloudFormation templates.
 
-**Python library: troposphere** – a library to create AWS CloudFormation templates via python & It also helps to build resources dynamically.
+**[Python library: troposphere](https://troposphere.readthedocs.io/en/latest/index.html)** – a library to create AWS CloudFormation templates via python & It also helps to build resources dynamically.
 
-**Sample templates**
+**[Sample templates](https://aws.amazon.com/cloudformation/resources/templates/)**
 
-**Best practices**
+**[Best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)**
 
 
 # References
@@ -523,4 +555,4 @@ Copyright © 2020 Arya Nalinkumar
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" align="left" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 <br />
 
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">AWS CloudFormation - Infrastructure as Code</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arya-nk.github.io/aws_cloudFormation/" property="cc:attributionName" rel="cc:attributionURL">Arya Nalinkumar</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">AWS CloudFormation - Infrastructure as Code</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://arya-nk.github.io/aws-cloudformation/" property="cc:attributionName" rel="cc:attributionURL">Arya Nalinkumar</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

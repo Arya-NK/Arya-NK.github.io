@@ -8,7 +8,7 @@ $(function() {
 window.onunload = function() {};
 
 // Add lightbox class to all image links
-$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").not(".mySlides a").addClass("image-popup");
 
 // FitVids options
 $(function() {
@@ -54,4 +54,19 @@ $(document).ready(function() {
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
+
+  $('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: '.mySlides a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+  });
+
 });
+
+
+
+
