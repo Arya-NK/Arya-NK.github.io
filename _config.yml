@@ -1,7 +1,7 @@
 # Site
 title:               Arya NK
 bio:                'Software Developer'
-description:        '•Data Science •Machine Learning •Data Visualisation'
+description:        '•Data Science •Software Engineering •DevOps'
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -68,6 +68,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jemoji
 
 jekyll-mentions:
     base_url: 

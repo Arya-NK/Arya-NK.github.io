@@ -8,3 +8,4 @@ gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
 gem 'thin' 
+gem 'jemoji'
