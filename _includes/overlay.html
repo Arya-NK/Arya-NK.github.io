@@ -5,9 +5,14 @@
     {% unless image contains 'http://' or image contains 'https://' %}
     {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
     {% endunless %}
-    <li style="background:url({{ image }}) center center no-repeat;">
-      <a {% if item.url %} href="{{ item.url }}"  {% endif %} {% unless item.completed %}class="active" {% endunless %} target="_blank"
-        rel="nofollow external">
+    <li>
+      <a {% if item.url %} href="{{ item.url }}" {% endif %} {% unless item.completed %}class="active" {% endunless %}
+        target="_blank" rel="nofollow external">
+        {% if item.image %}
+        <span>
+          <img src="{{ image }}" style="width:100%; height:100%; opacity:.4">
+        </span>
+        {% endif %}
         <span>
           {{ item.title }}
           {% unless item.completed %}
