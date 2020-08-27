@@ -155,3 +155,13 @@ canvas {
 	  height: 50% !important;
 	}
   }
+
+ .project-page {
+	@extend %extend1;
+	font-family: $font1;
+	@include font-rem($doc-font-size);
+	color: $color_tuatara;
+	background-color: $bodycolor;
+	background-position: center center;
+	background-attachment: fixed;
+}

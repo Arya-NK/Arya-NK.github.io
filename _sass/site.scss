@@ -11,7 +11,7 @@
 html {
 	@extend %extend1;
 }
-body {
+body:not(.project-page) {
 	@extend %extend1;
 	font-family: $font1;
 	@include font-rem($doc-font-size);
