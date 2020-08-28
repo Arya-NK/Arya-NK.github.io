@@ -497,27 +497,104 @@ We have covered so much about AWS CloudFormation in this post. There are other f
 
 # References
 
+<div style="word-break: break-all;">
+    <ul>
 
 
-* Docs.aws.amazon.com. n.d. AWS Cloudformation Best Practices - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. AWS Cloudformation Concepts - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html> [Accessed 20 August 2020].
-* Amazon Web Services, Inc. n.d. AWS Cloudformation Features. [online] Available at: <https://aws.amazon.com/cloudformation/features/> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. AWS Resource And Property Types Reference - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html> [Accessed 20 August 2020].
-* Barr, J., 2018. New – CloudFormation Drift Detection. [Blog] AWS Blog, Available at: <https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/>.
-* Docs.aws.amazon.com. n.d. Cloudformation Helper Scripts Reference - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html> [Accessed 20 August 2020].
-* Amazon Web Services, Inc. n.d. Cloudformation Templates. [online] Available at: <https://aws.amazon.com/cloudformation/resources/templates/> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. Cloudformation — AWS CLI 1.18.123 Command Reference. [online] Available at: <https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. Deletionpolicy Attribute - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. Estimating The Cost Of Your Cloudformation Stack - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-paying.html> [Accessed 20 August 2020].
-* Amazon Web Services, Inc. 2011. Introducing AWS Cloudformation. [online] Available at: <https://aws.amazon.com/about-aws/whats-new/2011/02/25/introducing-aws-cloudformation/>.
-* Maarek, S., 2020. Master AWS Cloudformation: Deploy Your Own Infastructure. [online] Udemy. Available at: <https://www.udemy.com/course/aws-cloudformation-master-class/> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. Template Anatomy - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html> [Accessed 20 August 2020].
-* Troposphere.readthedocs.io. n.d. Troposphere — Troposphere 2.4.1 Documentation. [online] Available at: <https://troposphere.readthedocs.io/en/latest/index.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. Using AWS Cloudformation Macros To Perform Custom Processing On Templates - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. What Is AWS Cloudformation Designer? - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html> [Accessed 20 August 2020].
-* Docs.aws.amazon.com. n.d. What Is AWS Cloudformation? - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html> [Accessed 20 August 2020]
-* Docs.aws.amazon.com. n.d. Working With Nested Stacks - AWS Cloudformation. [online] Available at: <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html> [Accessed 20 August 2020].
+        <li> Docs.aws.amazon.com. n.d. AWS Cloudformation Best Practices - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html>
+            </a> [Accessed 20 August 2020]. </li>
 
+        <li> Docs.aws.amazon.com. n.d. AWS Cloudformation Concepts - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html>
+            </a> [Accessed 20 August 2020]. </li>
+
+        <li> Amazon Web Services, Inc. n.d. AWS Cloudformation Features. [online] Available at: <a
+                href="https://aws.amazon.com/cloudformation/features/">
+                <https: //aws.amazon.com/cloudformation/features /></a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. AWS Resource And Property Types Reference - AWS Cloudformation. [online]
+            Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Barr, J., 2018. New – CloudFormation Drift Detection. [Blog] AWS Blog, Available at: <a
+                href="https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/">
+                <https: //aws.amazon.com/blogs/aws/new-cloudformation-drift-detection /></a>.</li>
+
+        <li> Docs.aws.amazon.com. n.d. Cloudformation Helper Scripts Reference - AWS Cloudformation. [online] Available
+            at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Amazon Web Services, Inc. n.d. Cloudformation Templates. [online] Available at: <a
+                href="https://aws.amazon.com/cloudformation/resources/templates/">
+                <https: //aws.amazon.com/cloudformation/resources/templates /></a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. Cloudformation — AWS CLI 1.18.123 Command Reference. [online] Available at: <a
+                href="https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html">
+                <https: //docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. Deletionpolicy Attribute - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. Estimating The Cost Of Your Cloudformation Stack - AWS Cloudformation. [online]
+            Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-paying.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-paying.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Amazon Web Services, Inc. 2011. Introducing AWS Cloudformation. [online] Available at: <a
+                href="https://aws.amazon.com/about-aws/whats-new/2011/02/25/introducing-aws-cloudformation/">
+                <https: //aws.amazon.com/about-aws/whats-new/2011/02/25/introducing-aws-cloudformation /></a>.</li>
+
+        <li> Maarek, S., 2020. Master AWS Cloudformation: Deploy Your Own Infastructure. [online] Udemy. Available at:
+            <a href="https://www.udemy.com/course/aws-cloudformation-master-class/">
+                <https: //www.udemy.com/course/aws-cloudformation-master-class /></a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. Template Anatomy - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Troposphere.readthedocs.io. n.d. Troposphere — Troposphere 2.4.1 Documentation. [online] Available at: <a
+                href="https://troposphere.readthedocs.io/en/latest/index.html">
+                <https: //troposphere.readthedocs.io/en/latest/index.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. Using AWS Cloudformation Macros To Perform Custom Processing On Templates - AWS
+            Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. What Is AWS Cloudformation Designer? - AWS Cloudformation. [online] Available at:
+            <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html">
+                <https:
+                    //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html>
+            </a> [Accessed 20 August 2020].</li>
+
+        <li> Docs.aws.amazon.com. n.d. What Is AWS Cloudformation? - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html>
+            </a> [Accessed 20 August 2020]. </li>
+
+        <li> Docs.aws.amazon.com. n.d. Working With Nested Stacks - AWS Cloudformation. [online] Available at: <a
+                href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html">
+                <https: //docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html>
+            </a> [Accessed 20 August 2020]. </li>
+
+
+    </ul>
+    <div>
 # Copyright & License
 
 Copyright © 2020 Arya Nalinkumar
