@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS CloudFormation - Infrastructure as Code"
-date:   2020-08-25
+date:   2020-08-28
 excerpt: ""
 tags: [AWS, Cloud Computing, CloudFormation, Infrastructure as Code]
 feature: /assets/img/featureImages/second.jpeg
@@ -594,7 +594,8 @@ We have covered so much about AWS CloudFormation in this post. There are other f
 
 
     </ul>
-    <div>
+  </div>
+
 # Copyright & License
 
 Copyright © 2020 Arya Nalinkumar
