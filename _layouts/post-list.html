@@ -22,7 +22,7 @@ layout: compress
                     {% for post in site.posts %}
                         {% if post.project == null %}
                     <ul>
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                        <li class="animated fadeInLeft">
                             <a class="zoombtn" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
                             <a href="{{ post.url | relative_url }}" class="btn zoombtn">Read More</a>
@@ -35,7 +35,5 @@ layout: compress
         </div>
     </header>
     {% include scripts.html %}
-    <script src="{{ '/assets/js/wow.min.js' | relative_url }}"></script>
-    <script type="text/javascript">(new WOW).init();</script>
 </body>
 </html>
