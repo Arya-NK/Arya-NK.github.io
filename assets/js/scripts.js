@@ -10,10 +10,6 @@ window.onunload = function() {};
 // Add lightbox class to all image links
 $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").not(".mySlides a").addClass("image-popup");
 
-// FitVids options
-$(function() {
-  $(".content").fitVids();
-});
 
 // All others
 $(document).ready(function() {
