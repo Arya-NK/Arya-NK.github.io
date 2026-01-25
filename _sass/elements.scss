@@ -219,3 +219,13 @@ img.emoji {
 .code-values {
   color: green;
 }
+
+// Responsive video embeds (replaces fitvid.js)
+.content iframe[src*="youtube"],
+.content iframe[src*="vimeo"],
+.content iframe[src*="player"],
+.content video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}

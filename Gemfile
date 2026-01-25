@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
-gem "github-pages"
+gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "webrick"  # Required for Ruby 3+
 
-gem "jekyll"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-gem 'thin' 
-gem 'jemoji'
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-gist"
+  gem "jekyll-mentions"
+  gem "jemoji"
+end
