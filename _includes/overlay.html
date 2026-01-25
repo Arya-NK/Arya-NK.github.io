@@ -3,7 +3,7 @@
     {% for item in site.data.projects %}
     {% capture image %}{{ item.image }}{% endcapture %}
     {% unless image contains 'http://' or image contains 'https://' %}
-    {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+    {% capture image %}{{ image | relative_url }}{% endcapture %}
     {% endunless %}
     <li>
       <a {% if item.url %} href="{{ item.url }}" {% endif %} {% unless item.completed %}class="active" {% endunless %}

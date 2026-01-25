@@ -8,7 +8,7 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     <meta name="author" content="Arya NK">
-    <meta name="image" property="og:image" content="{{ site.url }}/assets/img/favicons/logo_expanded.png">
+    <meta name="image" property="og:image" content="{{ '/assets/img/favicons/logo_expanded.png' | absolute_url }}">
     {% include head.html %}
 </head>
 <body>
@@ -22,16 +22,16 @@ layout: compress
                     <h4>{{ page.date | date_to_string }}</h4>
                     {% if site.reading_time %}
                     <p class="reading-time">
-                      <i class="fa fa-clock-o"></i>
+                      <i class="fa-regular fa-clock"></i>
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
                     {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    <a class="btn zoombtn" href="{{ '/projects/' | relative_url }}">
                     {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    <a class="btn zoombtn" href="{{ '/posts/' | relative_url }}">
                     {% endif %}
-                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
                     </a>
                 </div>
                 {{ content }}
@@ -44,8 +44,8 @@ layout: compress
     </header>
     {% include scripts.html %}
     {% if site.mathjax == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax v3 -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     {% endif %}
 </body>
 </html>

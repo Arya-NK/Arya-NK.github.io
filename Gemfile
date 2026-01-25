@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll", "~> 4.3"
 gem "webrick"  # Required for Ruby 3+
 
 group :jekyll_plugins do
