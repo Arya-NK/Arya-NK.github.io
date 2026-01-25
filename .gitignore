@@ -1,4 +1,18 @@
 _site/
+vendor/
+vendor/bundle/
+.bundle/
+.sass-cache/
+node_modules/
+.DS_Store
+tmp/
+.env
+/.jekyll-metadata
+*.swp
+coverage/
+/.idea/
+/.vscode/
+/.cache_site/
 .sass-cache/
 .jekyll-metadata
 
