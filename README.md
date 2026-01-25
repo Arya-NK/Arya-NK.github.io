@@ -13,9 +13,12 @@ Visit `http://localhost:4000`
 
 ## Tech Stack
 
-- Jekyll 4.3+
-- GitHub Pages
-- Font Awesome 6
+- Jekyll 4.3+ / Sass / Ruby 3.x
+- GitHub Pages (Actions CI/CD)
+- Font Awesome 6 (CDN)
+- GLightbox (image lightbox)
+- Animate.css (animations)
+- Vanilla JavaScript
 
 ## License
 

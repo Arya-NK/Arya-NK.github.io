@@ -1,22 +1,25 @@
-// Simple menu toggle (replaces dlmenu plugin)
-$(document).ready(function() {
-  var $menu = $('#dl-menu');
-  var $trigger = $menu.find('.dl-trigger');
-  var $menuList = $menu.find('.dl-menu');
+// Simple menu toggle (vanilla JS)
+document.addEventListener('DOMContentLoaded', function() {
+  var menu = document.getElementById('dl-menu');
+  var trigger = menu.querySelector('.dl-trigger');
+  var menuList = menu.querySelector('.dl-menu');
 
   // Add back buttons to submenus
-  $menu.find('ul.dl-submenu').each(function() {
-    if ($(this).find('.dl-back').length === 0) {
-      $(this).prepend('<li class="dl-back"><a href="#">back</a></li>');
+  menu.querySelectorAll('ul.dl-submenu').forEach(function(submenu) {
+    if (!submenu.querySelector('.dl-back')) {
+      var backItem = document.createElement('li');
+      backItem.className = 'dl-back';
+      backItem.innerHTML = '<a href="#">back</a>';
+      submenu.insertBefore(backItem, submenu.firstChild);
     }
   });
 
   // Toggle menu open/close on button click
-  $trigger.on('click', function(e) {
+  trigger.addEventListener('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
 
-    if ($menuList.hasClass('dl-menuopen')) {
+    if (menuList.classList.contains('dl-menuopen')) {
       closeMenu();
     } else {
       openMenu();
@@ -24,54 +27,64 @@ $(document).ready(function() {
   });
 
   // Handle menu item clicks for submenus
-  $menuList.on('click', 'li > a', function(e) {
-    var $link = $(this);
-    var $item = $link.parent('li');
-    var $submenu = $item.children('ul.dl-submenu');
+  menuList.addEventListener('click', function(e) {
+    var link = e.target.closest('li > a');
+    if (!link) return;
+
+    var item = link.parentElement;
+    var submenu = item.querySelector('ul.dl-submenu');
 
     // If this item has a submenu, show it
-    if ($submenu.length > 0 && $link.attr('href') === '#') {
+    if (submenu && link.getAttribute('href') === '#') {
       e.preventDefault();
       e.stopPropagation();
-      $menuList.addClass('dl-subview');
-      $item.addClass('dl-subviewopen');
+      menuList.classList.add('dl-subview');
+      item.classList.add('dl-subviewopen');
     }
   });
 
   // Handle back button clicks
-  $menuList.on('click', '.dl-back > a', function(e) {
+  menuList.addEventListener('click', function(e) {
+    var backLink = e.target.closest('.dl-back > a');
+    if (!backLink) return;
+
     e.preventDefault();
     e.stopPropagation();
 
-    var $item = $(this).closest('li.dl-subviewopen');
-    $item.removeClass('dl-subviewopen');
+    var item = backLink.closest('li.dl-subviewopen');
+    if (item) {
+      item.classList.remove('dl-subviewopen');
+    }
 
-    if ($menuList.find('.dl-subviewopen').length === 0) {
-      $menuList.removeClass('dl-subview');
+    if (!menuList.querySelector('.dl-subviewopen')) {
+      menuList.classList.remove('dl-subview');
     }
   });
 
   // Close menu when clicking outside
-  $(document).on('click', function(e) {
-    if ($menuList.hasClass('dl-menuopen') && !$(e.target).closest('#dl-menu').length) {
+  document.addEventListener('click', function(e) {
+    if (menuList.classList.contains('dl-menuopen') && !e.target.closest('#dl-menu')) {
       closeMenu();
     }
   });
 
   function openMenu() {
-    $menuList.addClass('dl-menuopen dl-menu-toggle');
-    $trigger.addClass('dl-active');
+    menuList.classList.add('dl-menuopen', 'dl-menu-toggle');
+    trigger.classList.add('dl-active');
     setTimeout(function() {
-      $menuList.removeClass('dl-menu-toggle');
+      menuList.classList.remove('dl-menu-toggle');
     }, 300);
   }
 
   function closeMenu() {
-    $menuList.removeClass('dl-menuopen').addClass('dl-menu-toggle');
-    $trigger.removeClass('dl-active');
+    menuList.classList.remove('dl-menuopen');
+    menuList.classList.add('dl-menu-toggle');
+    trigger.classList.remove('dl-active');
     setTimeout(function() {
-      $menuList.removeClass('dl-menu-toggle dl-subview');
-      $menuList.find('.dl-subviewopen').removeClass('dl-subviewopen');
+      menuList.classList.remove('dl-menu-toggle', 'dl-subview');
+      menuList.querySelectorAll('.dl-subviewopen').forEach(function(item) {
+        item.classList.remove('dl-subviewopen');
+      });
     }, 300);
   }
 });
@@ -79,56 +92,79 @@ $(document).ready(function() {
 // Need this to show animation when go back in browser
 window.onunload = function() {};
 
-// Add lightbox class to all image links
-$(document).ready(function() {
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").not(".mySlides a").addClass("image-popup");
+// Zoom in/out animations and lightbox setup
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lightbox class to all image links
+  document.querySelectorAll("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").forEach(function(link) {
+    if (!link.closest('.mySlides')) {
+      link.classList.add('glightbox');
+    }
+  });
 
-  // zoom in/zoom out animations
-  if ($(".container").hasClass('fadeOut')) {
-    $(".container").removeClass("fadeOut").addClass("fadeIn");
+  // Gallery images
+  document.querySelectorAll('.gallery .mySlides a').forEach(function(link) {
+    link.classList.add('glightbox');
+    link.setAttribute('data-gallery', 'gallery');
+  });
+
+  // Initialize GLightbox if available
+  if (typeof GLightbox !== 'undefined') {
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true
+    });
   }
-  if ($(".wrapper").hasClass('fadeOut')) {
-    $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+
+  // Zoom in/zoom out animations
+  var container = document.querySelector('.container');
+  var wrapper = document.querySelector('.wrapper');
+
+  if (container && container.classList.contains('fadeOut')) {
+    container.classList.remove('fadeOut');
+    container.classList.add('fadeIn');
   }
-  $(".zoombtn").click(function() {
-    $(".container").removeClass("fadeIn").addClass("fadeOut");
-    $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
-  });
+  if (wrapper && wrapper.classList.contains('fadeOut')) {
+    wrapper.classList.remove('fadeOut');
+    wrapper.classList.add('fadeIn');
+  }
 
-  // go up button
-  $.goup({
-    trigger: 500,
-    bottomOffset: 10,
-    locationOffset: 20,
-    containerRadius: 0,
-    containerColor: '#fff',
-    arrowColor: '#000',
-    goupSpeed: 'normal'
-  });
-
-  // Lightbox
-  $('.image-popup').magnificPopup({
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1]
-    },
-    image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-    },
-    removalDelay: 300,
-    mainClass: 'mfp-fade'
-  });
-
-  $('.gallery').each(function() {
-    $(this).magnificPopup({
-      delegate: '.mySlides a',
-      type: 'image',
-      gallery: {
-        enabled: true
+  document.querySelectorAll('.zoombtn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      if (container) {
+        container.classList.remove('fadeIn');
+        container.classList.add('fadeOut');
+      }
+      if (wrapper) {
+        wrapper.classList.remove('fadeIn');
+        wrapper.classList.add('fadeOut');
       }
     });
+  });
+});
+
+// Go to top button
+document.addEventListener('DOMContentLoaded', function() {
+  // Create button
+  var goUpBtn = document.createElement('div');
+  goUpBtn.id = 'goup-btn';
+  goUpBtn.innerHTML = '<span>&#9650;</span>';
+  goUpBtn.style.cssText = 'position:fixed;bottom:10px;right:20px;width:40px;height:40px;background:#fff;color:#000;text-align:center;line-height:40px;cursor:pointer;opacity:0;visibility:hidden;transition:opacity 0.3s;z-index:9999;border-radius:0;box-shadow:0 2px 5px rgba(0,0,0,0.2);';
+  document.body.appendChild(goUpBtn);
+
+  // Show/hide on scroll
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 500) {
+      goUpBtn.style.opacity = '1';
+      goUpBtn.style.visibility = 'visible';
+    } else {
+      goUpBtn.style.opacity = '0';
+      goUpBtn.style.visibility = 'hidden';
+    }
+  });
+
+  // Scroll to top on click
+  goUpBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
