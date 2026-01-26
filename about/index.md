@@ -10,7 +10,7 @@ comments: false
 ---
 
 
-A software developer and tech enthusiast living in Cheltenham, Gloucestershire, UK. As a bit of my background, I have degree in Computer Science and Engineering from Cochin University of Science and Technology & masters in Software Systems from University of Bath. As part of the masters programme, I got opportunity to do an industrial placement as data scientist. Followed by, I started working in Software Development.
+I’m a Software Engineering Lead with a master’s degree from the University of Bath, UK. I started my career as a Data Scientist, moved into Software Engineering, and now lead engineering teams.
 
-This blog is a space for me to learn and write up my favourite topics. The blog posts will be focused on Software Engineering, DevOps, Data Science, and various other related topics. 
+I’ve worked in the tech industry across India, the UK, and the United States, and this blog is where I document what I’m learning along the way.
 
