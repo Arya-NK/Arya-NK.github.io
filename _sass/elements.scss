@@ -122,9 +122,36 @@ img {
 	border: 3px solid $white;
 	height: 150px;
 	width: 150px;
+	background: #fff;
+	box-shadow:
+		0 2px 8px rgba(0, 0, 0, 0.15),
+		0 0 20px rgba(255, 255, 255, 0.4);
+	filter: brightness(1) contrast(1.05);
+	transition: all 0.5s ease;
+	&:hover {
+		filter: brightness(1.1) contrast(1.1) drop-shadow(0 0 10px rgba(255, 255, 200, 0.7));
+		box-shadow:
+			0 4px 12px rgba(0, 0, 0, 0.2),
+			0 0 35px rgba(255, 255, 200, 0.6);
+	}
 }
 .author-photo {
-    background-color: $white;
+    display: block;
+    margin: 12px auto;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.15),
+        0 0 15px rgba(255, 255, 255, 0.3);
+    filter: brightness(1) contrast(1.05);
+    transition: all 0.5s ease;
+    &:hover {
+        filter: brightness(1.1) contrast(1.1) drop-shadow(0 0 8px rgba(255, 255, 200, 0.6));
+        box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.2),
+            0 0 30px rgba(255, 255, 200, 0.5);
+    }
 }
 .image-right {
     float: right;
