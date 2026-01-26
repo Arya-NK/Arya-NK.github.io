@@ -8,3 +8,16 @@
     border-radius: 12px;
     font-weight: bold;
   }
+
+/* Highlight box for key takeaways */
+.highlight-box {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #1a3a4a 0%, #1c2833 50%, #2a1f3d 100%);
+    color: white;
+    border-radius: 12px;
+    margin: 20px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
