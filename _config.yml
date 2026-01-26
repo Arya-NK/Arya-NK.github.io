@@ -29,14 +29,10 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# Comments
-disqus_shortname:   arya-nk
-
 # Social
 # if you don't have any of social below, comment the line.
 google:
-  #plus:            #username
-  #analytics:       # Removed - no longer tracking
+  analytics:        G-72ZTX08MY2
   #verify:
   #ad-client:
   #ad-slot:
