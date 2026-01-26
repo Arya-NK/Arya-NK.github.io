@@ -3,14 +3,14 @@
     {% for item in site.data.projects %}
     {% capture image %}{{ item.image }}{% endcapture %}
     {% unless image contains 'http://' or image contains 'https://' %}
-    {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+    {% capture image %}{{ image | relative_url }}{% endcapture %}
     {% endunless %}
     <li>
       <a {% if item.url %} href="{{ item.url }}" {% endif %} {% unless item.completed %}class="active" {% endunless %}
         target="_blank" rel="nofollow external">
         {% if item.image %}
         <span>
-          <img src="{{ image }}" style="width:100%; height:100%; opacity:.4">
+          <img src="{{ image }}" alt="{{ item.title }}" style="width:100%; height:100%; opacity:.4">
         </span>
         {% endif %}
         <span>

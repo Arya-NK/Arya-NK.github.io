@@ -1,7 +1,11 @@
 # Site
 title:               Arya NK
-bio:                'Software Developer'
-description:        '•Data Science •Software Engineering •DevOps'
+bio:                'Software Engineering Lead'
+description:        'Data Science | Software Engineering | DevOps'
+skills:
+  - Data Science
+  - Software Engineering
+  - DevOps
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'

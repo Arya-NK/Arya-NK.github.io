@@ -103,7 +103,8 @@
 			position: absolute;
 			top: 0;
 			line-height: 40px;
-			font-family: 'fontawesome';
+			font-family: 'Font Awesome 6 Free';
+			font-weight: 900;
 			color: $white;
 			speak: none;
 			-webkit-font-smoothing: antialiased;
@@ -314,9 +315,23 @@ All this is done for any sub-level being entered.
 		opacity: 0;
 	}
 }
-/* No Touch Fallback */
-.no-touchevents .dl-menuwrapper li a:hover {
+/* Hover effect for menu items */
+.dl-menuwrapper li a:hover {
 	background: rgba(255,248,213,0.1);
+}
+/* Skills bullet list in nav */
+.dl-menuwrapper .skills-list {
+	list-style: disc;
+	margin: 10px 0 10px 35px;
+	padding: 0;
+	text-align: left;
+	li {
+		display: list-item;
+		color: rgba($white, 0.8);
+		font-size: 14px;
+		font-weight: 300;
+		padding: 2px 0;
+	}
 }
 /* No JS Fallback */
 .no-js {
