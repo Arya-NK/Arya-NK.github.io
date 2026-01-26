@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Human-in-the-Loop vs LLM-as-Judge"
+title: "Human-in-the-Loop vs LLM-as-a-Judge"
 date: 2026-01-25
-excerpt: "Human-in-the-Loop vs LLM-as-Judge: a practical comparison of cost, scale, and accuracy."
+excerpt: "Human-in-the-Loop vs LLM-as-a-Judge: a practical comparison of cost, scale, and accuracy."
 tags: [AI, Machine Learning, LLM, Evaluation, MLOps]
 feature: /assets/img/featureImages/third.jpg
 ---
@@ -120,7 +120,7 @@ The decision isn't always binary. Here's a practical framework:
 
 > **Best of both worlds: LLM handles volume, humans handle complexity.**
 
-A hybrid approach—using LLM-as-Judge for initial screening followed by human review of edge cases—can deliver the best of both worlds. This strategy reduces cost and scales evaluation while maintaining the expertise and nuanced judgment that only humans can provide.
+A hybrid approach—using LLM-as-a-Judge for initial screening followed by human review of edge cases—can deliver the best of both worlds. This strategy reduces cost and scales evaluation while maintaining the expertise and nuanced judgment that only humans can provide.
 
 ---
 
@@ -147,4 +147,4 @@ Copyright © 2026 Arya Nalinkumar
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" align="left" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 <br />
 
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Human-in-the-Loop vs LLM-as-Judge</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://arya-nk.github.io/ai-evaluation/" property="cc:attributionName" rel="cc:attributionURL">Arya Nalinkumar</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Human-in-the-Loop vs LLM-as-a-Judge</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://arya-nk.github.io/ai-evaluation/" property="cc:attributionName" rel="cc:attributionURL">Arya Nalinkumar</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
