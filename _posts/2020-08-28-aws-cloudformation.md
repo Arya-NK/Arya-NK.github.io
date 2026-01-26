@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "AWS CloudFormation - Infrastructure as Code"
-date:   2020-08-28
-excerpt: ""
+date: 2020-08-28
+excerpt: "Learn how to define, provision, and manage AWS infrastructure using CloudFormation templates and stacks."
 tags: [AWS, Cloud Computing, CloudFormation, Infrastructure as Code]
 feature: /assets/img/featureImages/second.jpeg
-comments: true
 ---
 
 <div class="alert-custom">

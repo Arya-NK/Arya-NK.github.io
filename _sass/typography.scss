@@ -68,11 +68,15 @@ h3.title a {
 
 // quotes
 blockquote {
-	font-family:$alt-font;
+	font-family: Georgia, 'Times New Roman', serif;
 	font-style:italic;
-	border-left:8px solid $color_tundora;
-	padding-left:20px;
-	margin: 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.5;
+	border-left: 8px solid $color_tundora;
+	padding: 2px 20px;
+	margin: 15px 0;
+	text-shadow: 0 0 8px rgba(94, 196, 196, 0.3), 0 0 15px rgba(94, 196, 196, 0.15);
 }
 @media only screen and (min-width: 48em) {
 	blockquote {
@@ -131,6 +135,22 @@ li .highlight pre {
 // table
 table {
 	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	th {
+		background: rgba(30, 40, 50, 0.6);
+		padding: 12px 15px;
+		text-align: left;
+		font-weight: 600;
+		border-bottom: 2px solid rgba(94, 196, 196, 0.4);
+	}
+	td {
+		padding: 10px 15px;
+		border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+	}
+	tr:hover td {
+		background: rgba(94, 196, 196, 0.05);
+	}
 }
 
 // notice
